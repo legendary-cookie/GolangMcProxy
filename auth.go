@@ -82,6 +82,7 @@ func Login(conn net.Conn, conf *Config) (name string, uuid uuid.UUID, profilePub
 	}
 
 	// send login success
+
 	err = conn.WritePacket(pk.Marshal(
 		packetid.LoginSuccess,
 		pk.UUID(uuid),

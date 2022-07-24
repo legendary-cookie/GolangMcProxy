@@ -19,7 +19,7 @@ func main() {
 	conf := &Config{
 		OnlineMode:           false,
 		EnforceSecureProfile: false,
-		Threshold:            -1,
+		Threshold:            100,
 	}
 	l, err := net.ListenMC(":25565")
 	if err != nil {
